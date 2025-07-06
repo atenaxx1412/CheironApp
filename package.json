@@ -1,0 +1,108 @@
+{
+  "name": "cheiron-app",
+  "version": "0.1.0",
+  "description": "Cheiron AI Teacher Desktop Application",
+  "author": "Cheiron",
+  "private": true,
+  "dependencies": {
+    "@babel/helper-validator-identifier": "^7.27.1",
+    "@google/generative-ai": "^0.24.1",
+    "@surma/rollup-plugin-off-main-thread": "^2.2.3",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@trysound/sax": "^0.2.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.10.0",
+    "concurrently": "^9.2.0",
+    "electron-is-dev": "^3.0.1",
+    "firebase": "^11.9.1",
+    "lucide-react": "^0.525.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^6.30.1",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^4.9.5",
+    "wait-on": "^8.0.3",
+    "web-vitals": "^2.1.4",
+    "zustand": "^5.0.6"
+  },
+  "homepage": "./",
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "build-electron": "npm run build && electron-builder",
+    "dist": "npm run build && electron-builder --publish=never"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/electron": "^1.4.38",
+    "@types/react-router-dom": "^5.3.3",
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.cheiron.app",
+    "productName": "Cheiron",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "build/**/*",
+      "public/electron.js",
+      "public/preload.js",
+      "public/Cheiron_*.png",
+      "public/icon_boder_512x512.png",
+      "src/imgs/icon_boder.*",
+      ".env",
+      "node_modules/**/*"
+    ],
+    "mac": {
+      "icon": "src/imgs/icon_boder.icns",
+      "category": "public.app-category.education",
+      "target": [
+        {
+          "target": "default",
+          "arch": ["arm64", "x64"]
+        }
+      ],
+      "artifactName": "${productName}-${version}-${arch}-mac.${ext}"
+    },
+    "win": {
+      "icon": "src/imgs/icon_boder.ico"
+    },
+    "linux": {
+      "icon": "src/imgs/icon_boder_512x512.png"
+    }
+  }
+}

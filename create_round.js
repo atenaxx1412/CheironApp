@@ -1,0 +1,97 @@
+const fs = require('fs');
+const path = require('path');
+
+// Base64エンコードされた丸いCheiron アイコンを作成
+// 元の256x256アイコンをベースに丸い形状を作成
+
+const createRoundIcon = () => {
+    // SVGで丸いアイコンを作成
+    const svgContent = `
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <clipPath id="circle">
+            <circle cx="128" cy="128" r="128"/>
+        </clipPath>
+        <radialGradient id="blueGradient" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#2E5BBA;stop-opacity:1" />
+        </radialGradient>
+    </defs>
+    
+    <!-- 丸い背景 -->
+    <circle cx="128" cy="128" r="128" fill="url(#blueGradient)"/>
+    
+    <!-- ケンタウロス（白色で描画） -->
+    <g clip-path="url(#circle)" transform="translate(40, 30)">
+        <!-- 人間の胴体 -->
+        <path d="M 88 60 C 88 45, 102 35, 118 35 C 134 35, 148 45, 148 60 L 148 85 C 148 95, 140 100, 130 100 L 106 100 C 96 100, 88 95, 88 85 Z" fill="white" stroke="#333" stroke-width="3"/>
+        
+        <!-- 頭 -->
+        <circle cx="118" cy="45" r="15" fill="white" stroke="#333" stroke-width="3"/>
+        
+        <!-- ヘルメット -->
+        <path d="M 105 35 C 105 25, 111 20, 118 20 C 125 20, 131 25, 131 35 L 131 45 C 131 50, 128 52, 125 52 L 111 52 C 108 52, 105 50, 105 45 Z" fill="white" stroke="#333" stroke-width="3"/>
+        
+        <!-- ヘルメットの羽根 -->
+        <path d="M 125 25 Q 135 20, 145 25 Q 140 30, 130 35" fill="white" stroke="#333" stroke-width="2"/>
+        
+        <!-- 腕 -->
+        <ellipse cx="95" cy="75" rx="8" ry="20" fill="white" stroke="#333" stroke-width="3"/>
+        <ellipse cx="141" cy="75" rx="8" ry="20" fill="white" stroke="#333" stroke-width="3"/>
+        
+        <!-- 馬の体 -->
+        <ellipse cx="118" cy="130" rx="45" ry="25" fill="white" stroke="#333" stroke-width="3"/>
+        
+        <!-- 馬の足 -->
+        <rect x="85" y="150" width="8" height="30" fill="white" stroke="#333" stroke-width="2"/>
+        <rect x="100" y="150" width="8" height="30" fill="white" stroke="#333" stroke-width="2"/>
+        <rect x="128" y="150" width="8" height="30" fill="white" stroke="#333" stroke-width="2"/>
+        <rect x="143" y="150" width="8" height="30" fill="white" stroke="#333" stroke-width="2"/>
+        
+        <!-- 蹄 -->
+        <ellipse cx="89" cy="185" rx="6" ry="4" fill="#333"/>
+        <ellipse cx="104" cy="185" rx="6" ry="4" fill="#333"/>
+        <ellipse cx="132" cy="185" rx="6" ry="4" fill="#333"/>
+        <ellipse cx="147" cy="185" rx="6" ry="4" fill="#333"/>
+        
+        <!-- 尻尾 -->
+        <path d="M 160 125 Q 175 130, 170 145 Q 165 135, 155 140" fill="white" stroke="#333" stroke-width="2"/>
+    </g>
+</svg>`;
+
+    // SVGファイルとして保存
+    fs.writeFileSync(path.join(__dirname, 'public', 'Cheiron_256x256_round.svg'), svgContent);
+    
+    console.log('✅ 丸いSVGアイコンを作成しました: public/Cheiron_256x256_round.svg');
+    
+    // PNGバージョンも作成（簡易版）
+    const canvas = `
+    <svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:#4A90E2"/>
+                <stop offset="100%" style="stop-color:#2E5BBA"/>
+            </radialGradient>
+        </defs>
+        <circle cx="128" cy="128" r="128" fill="url(#bg)"/>
+        <g transform="translate(64, 64) scale(0.8)">
+            <!-- 簡化されたケンタウロス -->
+            <rect x="40" y="30" width="40" height="30" rx="5" fill="white" stroke="#333" stroke-width="2"/>
+            <circle cx="60" cy="25" r="12" fill="white" stroke="#333" stroke-width="2"/>
+            <ellipse cx="60" cy="80" rx="35" ry="20" fill="white" stroke="#333" stroke-width="2"/>
+            <rect x="35" y="95" width="6" height="25" fill="white" stroke="#333" stroke-width="1"/>
+            <rect x="45" y="95" width="6" height="25" fill="white" stroke="#333" stroke-width="1"/>
+            <rect x="69" y="95" width="6" height="25" fill="white" stroke="#333" stroke-width="1"/>
+            <rect x="79" y="95" width="6" height="25" fill="white" stroke="#333" stroke-width="1"/>
+        </g>
+    </svg>`;
+    
+    fs.writeFileSync(path.join(__dirname, 'public', 'Cheiron_round_simple.svg'), canvas);
+    
+    console.log('✅ シンプルな丸いアイコンを作成しました: public/Cheiron_round_simple.svg');
+    console.log('');
+    console.log('electron.js で以下のように変更してください:');
+    console.log("icon: path.join(__dirname, 'Cheiron_round_simple.svg')");
+};
+
+createRoundIcon();

@@ -1,0 +1,380 @@
+{
+  "personalityQuestions": {
+    "corePersonality": [
+      {
+        "id": "core_01",
+        "category": "基本性格",
+        "question": "生徒が悩みを相談してきた時、まず最初にどんな言葉をかけますか？",
+        "charLimit": "50-100",
+        "weight": 5
+      },
+      {
+        "id": "core_02", 
+        "category": "基本性格",
+        "question": "厳しい現実を伝える時と、優しく励ます時のバランスをどう取りますか？(1-10で厳しさレベル)",
+        "charLimit": "100-200",
+        "weight": 5
+      },
+      {
+        "id": "core_03",
+        "category": "基本性格", 
+        "question": "生徒の話を聞く時、感情に共感することと論理的に分析することのどちらを重視しますか？",
+        "charLimit": "100-200",
+        "weight": 5
+      },
+      {
+        "id": "core_04",
+        "category": "基本性格",
+        "question": "生徒にアドバイスする時、具体的な指示を出すことと生徒の自主性を尊重することのバランスは？",
+        "charLimit": "100-200", 
+        "weight": 5
+      },
+      {
+        "id": "core_05",
+        "category": "基本性格",
+        "question": "生徒の問題解決において、短期的な解決と長期的な成長のどちらを優先しますか？",
+        "charLimit": "100-200",
+        "weight": 5
+      },
+      {
+        "id": "core_06",
+        "category": "言語パターン",
+        "question": "あなたがよく使う励ましの言葉や決まり文句を3つ教えてください",
+        "charLimit": "50-100",
+        "weight": 4
+      },
+      {
+        "id": "core_07",
+        "category": "言語パターン",
+        "question": "相談が終わる時、どんな言葉で生徒を送り出しますか？",
+        "charLimit": "50-100",
+        "weight": 4
+      },
+      {
+        "id": "core_08",
+        "category": "基本性格",
+        "question": "生徒の個人的な成長と、クラス全体・学校全体への配慮のバランスをどう取りますか？",
+        "charLimit": "100-200",
+        "weight": 4
+      },
+      {
+        "id": "core_09",
+        "category": "基本性格",
+        "question": "生徒のプライバシーをどこまで尊重し、どこから踏み込んで支援しますか？",
+        "charLimit": "100-200",
+        "weight": 5
+      },
+      {
+        "id": "core_10",
+        "category": "基本性格",
+        "question": "生徒が失敗や挫折を経験した時、どのようなアプローチで支援しますか？",
+        "charLimit": "100-200",
+        "weight": 5
+      },
+      {
+        "id": "core_11",
+        "category": "基本性格",
+        "question": "生徒の可能性を信じることと、現実的な限界を認識することのバランスは？",
+        "charLimit": "100-200",
+        "weight": 5
+      },
+      {
+        "id": "core_12",
+        "category": "言語パターン",
+        "question": "難しい話題や重い相談に入る前の「クッション言葉」はありますか？",
+        "charLimit": "50-100",
+        "weight": 3
+      },
+      {
+        "id": "core_13",
+        "category": "基本性格",
+        "question": "生徒が間違った判断をしそうな時、どのタイミングで、どう介入しますか？",
+        "charLimit": "100-200",
+        "weight": 5
+      },
+      {
+        "id": "core_14",
+        "category": "基本性格",
+        "question": "生徒のペースに合わせることと、必要な時に背中を押すことのバランスは？",
+        "charLimit": "100-200",
+        "weight": 4
+      },
+      {
+        "id": "core_15",
+        "category": "基本性格",
+        "question": "あなたの教育に対する最も大切な信念や哲学を一言で表すと？",
+        "charLimit": "50-100",
+        "weight": 5
+      }
+    ],
+    "challengingSituations": [
+      {
+        "id": "challenge_01",
+        "category": "難問対応",
+        "question": "親は医学部進学を強く希望しているが、生徒は芸術分野に進みたがっている。家庭の経済状況も厳しい状況で、この生徒にどうアドバイスしますか？",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_02",
+        "category": "難問対応", 
+        "question": "クラスでいじめを受けている生徒から相談を受けました。しかし加害者も別の問題を抱えている状況です。どう対応しますか？",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_03",
+        "category": "難問対応",
+        "question": "優秀だった生徒の成績が急激に下がり、授業にも集中できていません。家庭環境に問題がありそうですが、本人は話したがりません。",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_04",
+        "category": "難問対応",
+        "question": "将来に希望が持てず、「どうせ自分なんて」と自己否定を繰り返す生徒にどう向き合いますか？",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_05",
+        "category": "難問対応",
+        "question": "友人関係でトラブルがあり、クラスで孤立してしまった生徒。本人にも非があるようですが、どうサポートしますか？",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_06",
+        "category": "難問対応",
+        "question": "受験のプレッシャーで精神的に不安定になっている生徒。親も過度な期待をかけている状況で、どう介入しますか？",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_07",
+        "category": "難問対応",
+        "question": "恋愛関係のもつれで、学校生活に支障が出ている生徒たち。当事者からの相談にどう対応しますか？",
+        "charLimit": "200-400",
+        "weight": 4
+      },
+      {
+        "id": "challenge_08",
+        "category": "難問対応",
+        "question": "学習障害の可能性がある生徒。本人・保護者ともに認めたがらない状況で、どう支援しますか？",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_09",
+        "category": "難問対応",
+        "question": "部活動でのトラブルが原因で不登校気味になっている生徒。顧問との関係も良くない状況です。",
+        "charLimit": "200-400",
+        "weight": 4
+      },
+      {
+        "id": "challenge_10",
+        "category": "難問対応",
+        "question": "経済的な理由で進学を諦めようとしている優秀な生徒。奨学金等の情報は提供したが、家族の反対が強い。",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_11",
+        "category": "難問対応",
+        "question": "SNSでのトラブルが学校生活にも影響している状況。デジタル世代の問題にどうアプローチしますか？",
+        "charLimit": "200-400",
+        "weight": 4
+      },
+      {
+        "id": "challenge_12",
+        "category": "難問対応",
+        "question": "容姿や体型をからかわれて自信を失っている生徒。思春期特有の悩みにどう寄り添いますか？",
+        "charLimit": "200-400",
+        "weight": 4
+      },
+      {
+        "id": "challenge_13",
+        "category": "難問対応",
+        "question": "才能はあるが努力を嫌がる生徒と、努力しているが結果が出ない生徒。それぞれにどうアドバイスしますか？",
+        "charLimit": "200-400",
+        "weight": 4
+      },
+      {
+        "id": "challenge_14",
+        "category": "難問対応",
+        "question": "卒業後の進路が全く決まらず、やりたいことも見つからない生徒。時間は限られている状況で。",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_15",
+        "category": "難問対応",
+        "question": "他の教師や学校の方針と自分の考えが異なる場合、生徒にはどう伝えますか？",
+        "charLimit": "200-400",
+        "weight": 4
+      },
+      {
+        "id": "challenge_16",
+        "category": "難問対応",
+        "question": "生徒から「先生には理解してもらえない」と言われた時、どう対応しますか？",
+        "charLimit": "200-400",
+        "weight": 4
+      },
+      {
+        "id": "challenge_17",
+        "category": "難問対応",
+        "question": "保護者と生徒の意見が真っ向から対立している進路問題。中立的な立場で何ができますか？",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_18",
+        "category": "難問対応",
+        "question": "「どうせ理解されない」と心を閉ざしている生徒との信頼関係をどう築きますか？",
+        "charLimit": "200-400",
+        "weight": 5
+      },
+      {
+        "id": "challenge_19",
+        "category": "難問対応",
+        "question": "完璧主義で小さなミスも許せない生徒。プレッシャーで潰れそうになっている時の対応は？",
+        "charLimit": "200-400",
+        "weight": 4
+      },
+      {
+        "id": "challenge_20",
+        "category": "難問対応",
+        "question": "同性・異性への複雑な感情で悩んでいる生徒。性的アイデンティティの問題にどう向き合いますか？",
+        "charLimit": "200-400",
+        "weight": 4
+      }
+    ],
+    "practicalResponses": [
+      {
+        "id": "response_01",
+        "category": "実際回答",
+        "question": "「先生、僕は何をやってもダメなんです」と言う生徒に、最初の一言は？",
+        "charLimit": "50-150",
+        "weight": 5
+      },
+      {
+        "id": "response_02",
+        "category": "実際回答",
+        "question": "「みんなが進路を決めているのに、私だけ何も決まらなくて不安です」という相談への第一声は？",
+        "charLimit": "50-150",
+        "weight": 5
+      },
+      {
+        "id": "response_03",
+        "category": "実際回答",
+        "question": "「友達に裏切られました。もう誰も信じられません」と泣いている生徒への最初の対応は？",
+        "charLimit": "50-150",
+        "weight": 5
+      },
+      {
+        "id": "response_04",
+        "category": "実際回答",
+        "question": "「家族が期待しすぎて、プレッシャーがきついです」という悩みに、どう共感を示しますか？",
+        "charLimit": "50-150",
+        "weight": 4
+      },
+      {
+        "id": "response_05",
+        "category": "実際回答",
+        "question": "「勉強のやる気が全く出ません」という生徒に、やる気を引き出す最初のアプローチは？",
+        "charLimit": "50-150",
+        "weight": 4
+      },
+      {
+        "id": "response_06",
+        "category": "実際回答",
+        "question": "重い悩みを打ち明けてくれた生徒に、「話してくれてありがとう」以外でどう感謝を表現しますか？",
+        "charLimit": "50-150",
+        "weight": 4
+      },
+      {
+        "id": "response_07",
+        "category": "実際回答",
+        "question": "「この進路で本当に大丈夫でしょうか？」と不安がる生徒の背中を押す言葉は？",
+        "charLimit": "50-150",
+        "weight": 4
+      },
+      {
+        "id": "response_08",
+        "category": "実際回答",
+        "question": "失敗を恐れて挑戦できない生徒に、「失敗してもいい」以外でどう勇気づけますか？",
+        "charLimit": "50-150",
+        "weight": 4
+      },
+      {
+        "id": "response_09",
+        "category": "実際回答",
+        "question": "相談の最後に「頑張って」以外で、どんな言葉で生徒を送り出しますか？",
+        "charLimit": "50-150",
+        "weight": 4
+      },
+      {
+        "id": "response_10",
+        "category": "実際回答",
+        "question": "「先生に相談してよかった」と思ってもらえる締めくくりの言葉は？",
+        "charLimit": "50-150",
+        "weight": 4
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "boundary_01",
+        "category": "境界線",
+        "question": "生徒のプライベートな問題にどこまで踏み込みますか？境界線の基準は？",
+        "charLimit": "100-200",
+        "weight": 4
+      },
+      {
+        "id": "boundary_02",
+        "category": "境界線", 
+        "question": "保護者に報告すべき内容と、生徒との秘密を守る内容の判断基準は？",
+        "charLimit": "100-200",
+        "weight": 5
+      },
+      {
+        "id": "boundary_03",
+        "category": "境界線",
+        "question": "同僚教師との意見が分かれた時、生徒にはどの程度まで自分の考えを伝えますか？",
+        "charLimit": "100-200",
+        "weight": 4
+      },
+      {
+        "id": "boundary_04",
+        "category": "境界線",
+        "question": "生徒から「他の先生の悪口」を聞かされた時、どう対応しますか？",
+        "charLimit": "100-200",
+        "weight": 4
+      },
+      {
+        "id": "boundary_05",
+        "category": "境界線",
+        "question": "解決できない問題や、専門外の相談を受けた時、どのタイミングで他者に委ねますか？",
+        "charLimit": "100-200",
+        "weight": 5
+      }
+    ]
+  },
+  "rules": {
+    "charLimits": {
+      "short": "50-100文字（基本的な価値観・決まり文句）",
+      "medium": "100-200文字（対応方針・判断基準）", 
+      "long": "200-400文字（複雑な状況への詳細対応）"
+    },
+    "scoring": {
+      "weight5": "最重要（基本哲学・難問対応）",
+      "weight4": "重要（実践的対応）",
+      "weight3": "補助的（言語パターン）"
+    },
+    "guidelines": {
+      "authenticity": "実際にその立場だったらどう行動するかを考えて回答",
+      "specificity": "抽象的でなく、具体的な言葉や行動を示す",
+      "consistency": "他の回答との一貫性を保つ",
+      "personality": "自分らしい表現や価値観を込める"
+    }
+  }
+}

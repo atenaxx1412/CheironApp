@@ -1,0 +1,61 @@
+{
+  "appName": "Cheiron",
+  "version": "1.0.0",
+  "currentTeacherId": "teacher_001",
+  "features": {
+    "anonymousMode": true,
+    "chatHistory": true,
+    "categorySelection": true,
+    "modeSelection": true
+  },
+  "categories": [
+    {
+      "id": "career",
+      "name": "進路",
+      "description": "将来の進路や職業選択に関する相談",
+      "icon": "🎯",
+      "isActive": true
+    },
+    {
+      "id": "study", 
+      "name": "学習",
+      "description": "勉強方法や学習に関する悩み",
+      "icon": "📚",
+      "isActive": true
+    },
+    {
+      "id": "relationship",
+      "name": "人間関係", 
+      "description": "友人関係や人とのコミュニケーションについて",
+      "icon": "👥",
+      "isActive": true
+    }
+  ],
+  "chatModes": [
+    {
+      "id": "normal",
+      "name": "通常",
+      "description": "バランスの取れた丁寧な回答",
+      "isActive": true
+    },
+    {
+      "id": "detailed",
+      "name": "詳しく",
+      "description": "詳細で具体的な説明を含む回答",
+      "isActive": true
+    },
+    {
+      "id": "quick",
+      "name": "さくっと",
+      "description": "要点を簡潔にまとめた回答",
+      "isActive": true
+    },
+    {
+      "id": "encouraging",
+      "name": "励まし",
+      "description": "前向きで励ましの言葉を含む回答",
+      "isActive": true
+    }
+  ],
+  "lastUpdated": "2024-06-30T00:00:00.000Z"
+}
